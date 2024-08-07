@@ -1,0 +1,4 @@
+MVI A ,15H;
+MVI B,93H;
+ORA B;
+hlt;

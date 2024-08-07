@@ -1,0 +1,14 @@
+MVI A, 10H ; Assign value into A
+MVI B, 20H
+STA 00H ; Assign Accumulator Value to Memory 
+STA 01H
+ADD B; Perform Addition operation 
+STA 02H
+
+;MOV B, A ; Move value from A to B
+MVI C, 30H ; Assign value into C
+
+SUB C;Perform subtraction operation 
+STA 02H; Add C to the result
+LDA 0000H ;Transfer value from memory to Accumulator 
+HLT ; End of the program
